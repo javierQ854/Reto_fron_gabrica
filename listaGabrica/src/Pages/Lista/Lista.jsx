@@ -106,7 +106,7 @@ const Lista = () => {
         <Typography variant="h4" sx={{ marginBottom: 2, color: "white" }}>
           Lista de Clientes
         </Typography>
-        <Button startIcon={<ExitToAppIcon color="primary"/>} sx={{
+        <Button startIcon={<ExitToAppIcon sx={{ fill: "white" }}/>} sx={{
             marginRight:3,
             backgroundColor: "#860000", // Color de fondo normal
             color: "white", // Color del texto
@@ -136,7 +136,7 @@ const Lista = () => {
           />
         </Box>
         <Box>
-          <Button startIcon={<FileDownloadIcon />} sx={{
+          <Button startIcon={<FileDownloadIcon sx={{fill: "white" }} />} sx={{
             backgroundColor: "#007E49", // Color de fondo normal
             color: "white", // Color del texto
             "&:hover": {
