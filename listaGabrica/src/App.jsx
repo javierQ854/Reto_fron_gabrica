@@ -11,9 +11,11 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Login />} />
+          <Route path="/login" element={<Login />} /> {/* Agregar esta ruta */}
           <Route path="/Lista" element={<Lista />} />
         </Routes>
       </Router>
+
     </>
   )
 }

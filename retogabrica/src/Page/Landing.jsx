@@ -41,7 +41,8 @@ const LandingPage = () => {
             return;
         }
         try {
-            await axios.post("http://localhost:8000/crear", formData);
+            await axios.post("https://darkgreen-llama-311500.hostingersite.com/crear", formData);
+            console.log(formData)
             setSubmitted(true);
         } catch (error) {
             alert("Error al enviar los datos");
@@ -51,7 +52,7 @@ const LandingPage = () => {
     if (submitted) {
         return (
             <div className="registro_contenedor">
-                <img src="/logoFinal.PNG" alt="Logo final"></img>
+                <img className="logoPhoneFinal" src="/logoFinal.PNG" alt="Logo final"></img>
                 <h2>¡Gracias por registrarte!</h2>
             </div>
         )

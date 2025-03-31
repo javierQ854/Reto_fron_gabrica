@@ -50,10 +50,30 @@
     margin-right: 8px;
     vertical-align: middle;
 }
-
+.registro_contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.logoPhoneFinal{
+    width: calc(100% - 20%);
+}
 
 .img_fondo{
     display: none;
+}
+@media (min-width: 768px) {
+    .logoPhoneFinal{
+        width: calc(100% - 40%);
+    }    
+}
+@media (min-width: 1440px){
+    .logoPhoneFinal{
+        height: 80%;
+    }    
 }
 
 @media (min-width: 1024px) {
@@ -88,4 +108,15 @@
         padding: 1rem;
         border-radius: 10px;
     }
+    .registro_contenedor{
+        width: 100%;
+        height: 100vh;
+        gap: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logoPhoneFinal{
+        width: calc(100% - 60%);
+    }    
 }

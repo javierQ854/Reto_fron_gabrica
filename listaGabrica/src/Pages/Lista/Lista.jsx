@@ -45,7 +45,7 @@ const Lista = () => {
 
     const fetchLeads = async () => {
       try {
-        const res = await axios.get("http://localhost:8000/listar", {
+        const res = await axios.get("https://darkgreen-llama-311500.hostingersite.com/listar", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setLeads(res.data.data);
@@ -86,12 +86,12 @@ const Lista = () => {
     { field: "id", headerName: "ID", width: 70 },
     { field: "nombre", headerName: "Cliente", width: 150 },
     { field: "nit", headerName: "NIT", width: 100 },
-    { field: "nombre_punto", headerName: "Punto", width: 150 },
-    { field: "nombre_equipo", headerName: "Equipo", width: 150 },
+    { field: "nombrePunto", headerName: "Punto", width: 150 },
+    { field: "nombreEquipo", headerName: "Equipo", width: 150 },
     { field: "ciudad", headerName: "Ciudad", width: 120 },
     { field: "promotor", headerName: "Promotor", width: 150 },
     { field: "rtc", headerName: "RTC", width: 100 },
-    { field: "capitan_usuario", headerName: "Capitán", width: 150 },
+    { field: "capitanUusuario", headerName: "Capitán", width: 150 },
     { field: "ip", headerName: "IP", width: 120 },
     { field: "fecha", headerName: "Fecha", width: 120 },
     { field: "hora", headerName: "Hora", width: 100 },
@@ -167,9 +167,7 @@ const Lista = () => {
               fontWeight: "bold",
             },
           }}
-          
         />
-
       </Box>
 
     </Box>
